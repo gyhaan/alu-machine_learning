@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def matrix_shape(arr):
     """
     Calculates the shape of a matrix (nested list) as a list of integers.
