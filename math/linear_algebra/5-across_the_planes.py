@@ -34,5 +34,4 @@ def add_matrices2D(mat1, mat2):
         
         sum.append(sum_row)
 
-    print(sum)
     return sum
