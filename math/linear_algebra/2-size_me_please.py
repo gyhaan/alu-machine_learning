@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+"""
+This module provides functions for calculating matrix shapes.
+"""
+
 def matrix_shape(arr):
     """
     Calculates the shape of a matrix (nested list) as a list of integers.
@@ -19,4 +23,3 @@ def matrix_shape(arr):
 
     check_arr_size(arr)
     return shape
-
