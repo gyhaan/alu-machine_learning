@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
 
+""""
+This is module for 
+adding matrices
+"""
+
+
 def check_shape(arr):
     shape_arr = []
 
@@ -10,6 +16,12 @@ def check_shape(arr):
     return shape_arr
 
 def add_matrices2D(mat1, mat2):
+
+    """"
+    This is for addition
+    """
+
+
     sum = []
 
     if(check_shape(mat1) != check_shape(mat2)):
@@ -24,12 +36,3 @@ def add_matrices2D(mat1, mat2):
 
     print(sum)
     return sum
-
-mat1 = [[1, 2], [3, 4]]
-mat2 = [[5, 6], [7, 8]]
-
-print(add_matrices2D(mat1, mat2))
-print(mat1)
-
-print(mat2)
-print(add_matrices2D(mat1, [[1, 2, 3], [4, 5, 6]]))
