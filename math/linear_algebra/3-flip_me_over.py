@@ -32,7 +32,6 @@ def matrix_transpose(arr):
         # Iterate through the rows of the original matrix.
         for j in range(len(arr)):
             appendArr.append(arr[j][i])
-        
         new_arr.append(appendArr)
 
     return new_arr
