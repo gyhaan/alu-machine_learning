@@ -24,4 +24,3 @@ def matrix_shape(arr):
 
     check_arr_size(arr)
     return shape
-
