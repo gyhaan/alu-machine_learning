@@ -1,22 +1,38 @@
 #!/usr/bin/env python3
 
+"""
+This is a function to show transpose
+"""
+
 def matrix_transpose(arr):
-    new_arr = []
+    """
+    Transposes a 2D matrix (nested list) by swapping rows and columns.
 
+    Args:
+        arr (list): A 2D nested list representing the matrix to transpose.
+
+    Returns:
+        list: A new 2D nested list representing the transposed matrix.
+
+    Example:
+        Input:
+            [[1, 2, 3],
+             [4, 5, 6]]
+        Output:
+            [[1, 4],
+             [2, 5],
+             [3, 6]]
+    """
+    new_arr = []  # Initialize the transposed matrix.
+
+    # Iterate through the columns of the original matrix.
     for i in range(len(arr[0])):
-        appendArr = []
+        appendArr = []  # Temporary list to hold the current column as a row.
+        
+        # Iterate through the rows of the original matrix.
         for j in range(len(arr)):
-            appendArr.append(arr[j][i])
-            
-        new_arr.append(appendArr)
-    
+            appendArr.append(arr[j][i])  # Append the element to the current row.
+        
+        new_arr.append(appendArr)  # Add the new row to the transposed matrix.
+
     return new_arr
-
-mat1 = [[1, 2], [3, 4]]
-print(mat1)
-print(matrix_transpose(mat1))
-
-mat2 = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 10], [11, 12, 13, 14, 15],
-        [16, 17, 18, 19, 20], [21, 22, 23, 24, 25], [26, 27, 28, 29, 30]]
-print(mat2)
-print(matrix_transpose(mat2))
