@@ -28,11 +28,11 @@ def matrix_transpose(arr):
 
     # Iterate through the columns of the original matrix.
     for i in range(len(arr[0])):
-        appendArr = []  # Temporary list to hold the current column as a row.
+        appendArr = []
         # Iterate through the rows of the original matrix.
         for j in range(len(arr)):
-            appendArr.append(arr[j][i])  # Append 
+            appendArr.append(arr[j][i])
         
-        new_arr.append(appendArr)  # Add to final matrix.
+        new_arr.append(appendArr)
 
     return new_arr
