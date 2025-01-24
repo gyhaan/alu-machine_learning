@@ -4,6 +4,7 @@
 This is a function to add arrays
 """
 
+
 def add_arrays(arr1, arr2):
     """
     This is to add arrays
