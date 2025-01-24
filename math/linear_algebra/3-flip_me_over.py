@@ -4,6 +4,7 @@
 This is a function to show transpose
 """
 
+
 def matrix_transpose(arr):
     """
     Transposes a 2D matrix (nested list) by swapping rows and columns.
@@ -28,11 +29,10 @@ def matrix_transpose(arr):
     # Iterate through the columns of the original matrix.
     for i in range(len(arr[0])):
         appendArr = []  # Temporary list to hold the current column as a row.
-        
         # Iterate through the rows of the original matrix.
         for j in range(len(arr)):
-            appendArr.append(arr[j][i])  # Append the element to the current row.
+            appendArr.append(arr[j][i])  # Append 
         
-        new_arr.append(appendArr)  # Add the new row to the transposed matrix.
+        new_arr.append(appendArr)  # Add to final matrix.
 
     return new_arr
